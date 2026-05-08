@@ -9,9 +9,15 @@ Author: Damien Swarts (222868791)
 Date: 08 May 2026
 */
 
+import jakarta.persistence.Embeddable;
+
+@Embeddable
 public class ContactDetails {
     private String email;
     private String phone;
+
+    public ContactDetails() {
+    }
 
     public ContactDetails(String email, String phone) {
         this.email = email;
