@@ -36,12 +36,24 @@ public class Student extends Person{
         return studentID;
     }
 
+    public void setStudentID(String studentID) {
+        this.studentID = studentID;
+    }
+
     public String getFirstName() {
         return firstName;
     }
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
     public String getLastName() {
         return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public static class Builder{

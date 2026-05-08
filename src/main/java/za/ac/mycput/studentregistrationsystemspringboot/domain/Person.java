@@ -1,6 +1,8 @@
 package za.ac.mycput.studentregistrationsystemspringboot.domain;
 
 import jakarta.persistence.Embedded;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.MappedSuperclass;
 
 /*
@@ -33,18 +35,34 @@ public abstract class Person {
         return address;
     }
 
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
     @Embedded
     public ContactDetails getContactDetails() {
         return contactDetails;
     }
 
-    @Embedded
+    public void setContactDetails(ContactDetails contactDetails) {
+        this.contactDetails = contactDetails;
+    }
+
+    @Enumerated(EnumType.STRING)
     public Gender getGender() {
         return gender;
     }
 
-    @Embedded
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
+
+    @Enumerated(EnumType.STRING)
     public Race getRace() {
         return race;
+    }
+
+    public void setRace(Race race) {
+        this.race = race;
     }
 }
