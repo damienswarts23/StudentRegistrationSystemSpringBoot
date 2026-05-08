@@ -11,7 +11,7 @@ Date: 08 May 2026
 import za.ac.mycput.studentregistrationsystemspringboot.domain.*;
 
 public class StudentFactory {
-    public static Student createStudent(int studentID, String firstName, String lastName, Address address,
+    public static Student createStudent(String studentID, String firstName, String lastName, Address address,
                                         ContactDetails contactDetails, Gender gender, Race race){
         return new Student.Builder()
                 .setStudentID(studentID)

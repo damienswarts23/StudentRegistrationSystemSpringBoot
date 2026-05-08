@@ -10,7 +10,7 @@ Author: Damien Swarts (222868791)
 Date: 08 May 2026
 */
 public class Student extends Person{
-    private int studentID;
+    private String studentID;
     private String firstName;
     private String lastName;
 
@@ -21,7 +21,7 @@ public class Student extends Person{
         this.lastName = builder.lastName;
     }
 
-    public int getStudentID() {
+    public String getStudentID() {
         return studentID;
     }
 
@@ -30,7 +30,7 @@ public class Student extends Person{
     }
 
     public static class Builder{
-        private int studentID;
+        private String studentID;
         private String firstName;
         private String lastName;
         private Address address;
@@ -38,7 +38,7 @@ public class Student extends Person{
         private Gender gender;
         private Race race;
 
-        public Builder setStudentID(int studentID) {
+        public Builder setStudentID(String studentID) {
             this.studentID = studentID;
             return this;
         }
