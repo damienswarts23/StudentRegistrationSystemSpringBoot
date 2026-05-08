@@ -36,8 +36,12 @@ public class Student extends Person{
         return studentID;
     }
 
-    public String getFullName() {
-        return firstName + " " + lastName;
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 
     public static class Builder{
