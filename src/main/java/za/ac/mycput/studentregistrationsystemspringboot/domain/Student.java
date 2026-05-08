@@ -56,6 +56,19 @@ public class Student extends Person{
         this.lastName = lastName;
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentID='" + studentID + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", address=" + address +
+                ", contactDetails=" + contactDetails +
+                ", gender=" + gender +
+                ", race=" + race +
+                '}';
+    }
+
     public static class Builder{
         private String studentID;
         private String firstName;
