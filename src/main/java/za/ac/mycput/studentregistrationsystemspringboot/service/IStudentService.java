@@ -5,7 +5,7 @@ import za.ac.mycput.studentregistrationsystemspringboot.domain.Student;
 import java.util.List;
 
 /*
-IStudentRepository.java
+IStudentService.java
 Interface defining CRUD operations for Student.
 
 Author: Damien Swarts (222868791)
