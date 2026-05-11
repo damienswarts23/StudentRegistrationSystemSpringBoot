@@ -15,11 +15,11 @@ import za.ac.mycput.studentregistrationsystemspringboot.service.StudentService;
 import java.util.List;
 
 @RestController
-public class StudentRegistrationSpringBootController {
+public class StudentController {
 
     //Call this Constructor independincy
     private final StudentService service;
-    public StudentRegistrationSpringBootController(StudentService service){
+    public StudentController(StudentService service){
         this.service = service;
     }
 
