@@ -1,8 +1,8 @@
 package za.ac.mycput.studentregistrationsystemspringboot.controller;
 
 /*
-StudentRegistrationSpringBootController.java
-This controller class is made to manage the project and call functions etc.
+StudentController.java
+This controller class is made to manage the project and call functions of the Student Class.
 
 Author: Damien Swarts (222868791)
 Date: 08 May 2026
