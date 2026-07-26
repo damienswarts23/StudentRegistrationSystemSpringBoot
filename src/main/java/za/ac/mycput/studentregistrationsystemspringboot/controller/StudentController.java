@@ -15,6 +15,7 @@ import za.ac.mycput.studentregistrationsystemspringboot.service.StudentService;
 import java.util.List;
 
 @RestController
+@RequestMapping("/Students")
 public class StudentController {
 
     //Call this Constructor independincy
