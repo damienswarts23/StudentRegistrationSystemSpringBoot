@@ -53,6 +53,6 @@ public class Address {
 
     @Override
     public String toString() {
-        return "Address" +street + ", " + city + ", " + postalCode + ", " + province;
+        return street + ", " + city + ", " + postalCode + ", " + province;
     }
 }
